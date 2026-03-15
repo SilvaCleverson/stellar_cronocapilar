@@ -1,6 +1,8 @@
 {
-  "name": "builders-founders-journey",
-  "version": "0.1.0",
+  "name": "cronocapilar",
+  "version": "1.0.0",
+  "description": "Hair care journey on Stellar — turn your routine into on-chain proof of self-care",
+  "author": "Angela Salles (Ang3la.xyz) https://ang3la.xyz",
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",

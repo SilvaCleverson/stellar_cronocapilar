@@ -44,17 +44,6 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
     onClose();
   };
 
-  // Função para obter o logo da carteira
-  const getWalletLogo = (walletName: string) => {
-    const name = walletName.toLowerCase();
-    if (name.includes("phantom")) {
-      return "/LogoPhantom.jpg";
-    } else if (name.includes("slush")) {
-      return "/LogoSlush.png";
-    }
-    return null;
-  };
-
   return (
     <div
       style={{
@@ -90,7 +79,7 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
           <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
             <div style={{ fontSize: 32 }}>💜</div>
             <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 14, color: "#667eea", fontWeight: 600 }}>
-              <span style={{ fontSize: 24 }}>📜</span>
+              <span style={{ fontSize: 24 }}>⭐</span>
               <span>Stellar</span>
             </div>
           </div>
@@ -303,13 +292,13 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
                 </div>
                 <div style={{ fontSize: 13, lineHeight: 1.6, marginBottom: 16, color: "#666" }}>
                   {language === "pt-BR"
-                    ? "Por favor, instale o Freighter ou outra carteira Stellar para conectar à Stellar Testnet."
+                    ? "Instale o Freighter (carteira Stellar) ou outra carteira compatível para conectar à Stellar Testnet."
                     : language === "en-US"
-                    ? "Please install Freighter or another Stellar wallet to connect to Stellar Testnet."
-                    : "Por favor, instala Freighter u otra cartera Stellar para conectarte a Stellar Testnet."}
+                    ? "Install Freighter (Stellar wallet) or another compatible wallet to connect to Stellar Testnet."
+                    : "Instala Freighter (cartera Stellar) u otra cartera compatible para conectarte a Stellar Testnet."}
                 </div>
                 <a
-                  href="https://metamask.io/download/"
+                  href="https://www.freighter.app/"
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{
@@ -328,8 +317,8 @@ export default function LoginModal({ isOpen, onClose }: LoginModalProps) {
                     boxShadow: "0 4px 12px rgba(102, 126, 234, 0.3)",
                   }}
                 >
-                  <span style={{ fontSize: 20 }}>🦊</span>
-                  <span>{language === "pt-BR" ? "Instalar MetaMask" : language === "en-US" ? "Install MetaMask" : "Instalar MetaMask"}</span>
+                  <span style={{ fontSize: 20 }}>⭐</span>
+                  <span>{language === "pt-BR" ? "Instalar Freighter" : language === "en-US" ? "Install Freighter" : "Instalar Freighter"}</span>
                 </a>
               </div>
             )}

@@ -46,7 +46,10 @@ next-env.d.ts
 # OS
 Thumbs.db
 
-# Old files with Sui references
+# Old / temp files
 *.old.tsx
 *.old.md
+Cabelo_natural*
+ocr_pages/
+tessdata/
 

@@ -23,7 +23,7 @@ export default function DemoBanner() {
       justifyContent: "center",
       gap: 8
     }}>
-      <span style={{ fontSize: 16 }}>📜</span>
+      <span style={{ fontSize: 16 }}>⭐</span>
       <span>
         {language === "pt-BR" 
           ? "Stellar Testnet | Conecte sua carteira para registrar tratamentos on-chain"

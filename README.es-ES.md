@@ -9,11 +9,22 @@
 - 🇪🇸 [Español (ES-ES)](README.es-ES.md) ← Estás aquí
 - 🇺🇸 [English (EN-US)](README.md)
 
-### ✅ **Estado: Demo - Red Stellar Simulada**
+---
 
-**🌐 Aplicación Demo:** Lista para deploy
+## 🎯 Entiende el proyecto (en 30 segundos)
 
-⚠️ **Nota:** Esta es una aplicación demo que simula la integración con la red Stellar. Las transacciones son simuladas con fines de demostración.
+| | |
+|---|---|
+| **Qué es** | Una app Web3 en **Stellar** que convierte tu rutina de cuidados del cabello natural en prueba verificable y on-chain de autocuidado. |
+| **El problema** | Confusión (Hidratación vs Nutrición vs Reconstrucción), desconfianza en las recomendaciones, tiempo y dinero perdidos. |
+| **La solución** | Diagnóstico simple (H/N/R), línea de tiempo rastreable y ecosistema validado por la comunidad con transparencia blockchain. |
+| **Por qué Stellar** | Confianza, bajo coste y red hecha para finanzas inclusivas — tu trayectoria de cuidado merece un libro mayor neutro y abierto. |
+
+---
+
+### ✅ **Estado: Demo - Stellar Testnet**
+
+**🌐 Demo:** Lista para deploy en Stellar Testnet. Conecta tu cartera (ej. [Freighter](https://www.freighter.app/)) para registrar tratamientos on-chain.
 
 ---
 
@@ -134,8 +145,9 @@ cronocapilar/
 ├── app/                    # Next.js App Router
 │   ├── page.tsx           # Página principal
 │   ├── layout.tsx         # Layout raíz
-│   └── globals.css       # Estilos globales
-├── components/            # Componentes React
+│   ├── globals.css        # Estilos globales
+│   └── icon.svg           # Icono del app
+├── components/             # Componentes React
 │   ├── HairTreatmentCard.tsx # Tarjeta de tratamiento
 │   ├── TreatmentCheckIn.tsx # Componente de check-in
 │   ├── Timeline.tsx       # Componente de timeline
@@ -230,11 +242,11 @@ Este proyecto es una aplicación demo con fines educativos y de demostración.
 
 ---
 
-## 👨‍💻 Autor
+## 👩‍💻 Autor
 
-**Ang3la.xyz**
+**Angela Salles** — [Ang3la.xyz](https://ang3la.xyz)
 
-Dueña de la idea y del proyecto. Desarrollado como demo para **[Stellar](https://stellar.org)**
+Owner, Founder & Builder. Creadora del proyecto. Desarrollado como demo para **[Stellar](https://stellar.org)**
 
 ---
 
@@ -253,5 +265,5 @@ Creemos que el cuidado del cabello es más que estética — es identidad, salud
 
 ---
 
-*Última actualización: Diciembre 2025*
+*Última actualización: Marzo 2026*
 

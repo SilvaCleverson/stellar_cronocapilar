@@ -248,21 +248,6 @@ export default function Page() {
                   padding: "10px 16px",
                   borderRadius: 12,
                   border: "2px solid rgba(102, 126, 234, 0.3)",
-                  background: "linear-gradient(135deg, #667eea 0%, #ff6b9d 100%)",
-                  color: "white",
-                  fontWeight: 600,
-                  fontSize: 13,
-                  cursor: "pointer",
-                }}
-              >
-                📜 SCROLL DEMO
-              </button>
-              <button
-                onClick={() => setIsLoginModalOpen(true)}
-                style={{
-                  padding: "10px 16px",
-                  borderRadius: 12,
-                  border: "2px solid rgba(102, 126, 234, 0.3)",
                   background: "rgba(102, 126, 234, 0.1)",
                   color: "#667eea",
                   fontWeight: 600,
@@ -285,7 +270,7 @@ export default function Page() {
                   cursor: "pointer",
                 }}
               >
-                Sair
+                {t.app.disconnect}
               </button>
             </>
           ) : (
@@ -302,7 +287,7 @@ export default function Page() {
                 cursor: "pointer",
               }}
             >
-              Conectar Carteira
+              {t.app.walletConnect}
             </button>
           )}
         </div>
@@ -313,7 +298,7 @@ export default function Page() {
         tabs={[
           {
             id: "profile",
-            label: language === "pt-BR" ? "Perfil" : "Profile",
+            label: t.app.profileTab,
             icon: "👤",
             content: (
               <div>
@@ -432,7 +417,7 @@ export default function Page() {
           },
           {
             id: "treatments",
-            label: language === "pt-BR" ? "Tratamentos" : "Treatments",
+            label: t.app.treatmentsTab,
             icon: "💆‍♀️",
             content: (
               <div>
@@ -448,13 +433,13 @@ export default function Page() {
           },
           {
             id: "timeline",
-            label: language === "pt-BR" ? "Timeline" : "Timeline",
+            label: t.app.timelineTab,
             icon: "📅",
             content: <Timeline />,
           },
           {
             id: "events",
-            label: language === "pt-BR" ? "Eventos" : "Events",
+            label: t.app.eventsTab,
             icon: "📝",
             content: <EventRegister />,
           },

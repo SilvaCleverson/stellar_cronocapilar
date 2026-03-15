@@ -9,11 +9,22 @@
 - 🇪🇸 [Español (ES-ES)](README.es-ES.md)
 - 🇺🇸 [English (EN-US)](README.md) ← You are here
 
-### ✅ **Status: Demo - Simulated Stellar Network**
+---
 
-**🌐 Demo Application:** Ready for deployment
+## 🎯 Understand the project (in 30 seconds)
 
-⚠️ **Note:** This is a demo application simulating Stellar network integration. Transactions are simulated for demonstration purposes.
+| | |
+|---|---|
+| **What it is** | A Web3 app on **Stellar** that turns your natural hair care routine into verifiable, on-chain proof of self-care. |
+| **The problem** | Confusion (Hydration vs Nutrition vs Reconstruction), distrust in recommendations, wasted time and money. |
+| **The solution** | Simple diagnosis (H/N/R), a traceable timeline, and a community-validated ecosystem with blockchain transparency. |
+| **Why Stellar** | Trust, low cost, and a network built for inclusive finance — your care journey deserves a neutral, open ledger. |
+
+---
+
+### ✅ **Status: Demo - Stellar Testnet**
+
+**🌐 Demo:** Ready for deployment on Stellar Testnet. Connect your wallet (e.g. [Freighter](https://www.freighter.app/)) to register treatments on-chain.
 
 ---
 
@@ -134,8 +145,9 @@ cronocapilar/
 ├── app/                    # Next.js App Router
 │   ├── page.tsx           # Main page
 │   ├── layout.tsx         # Root layout
-│   └── globals.css       # Global styles
-├── components/            # React components
+│   ├── globals.css        # Global styles
+│   └── icon.svg           # App icon
+├── components/             # React components
 │   ├── HairTreatmentCard.tsx # Treatment card
 │   ├── TreatmentCheckIn.tsx # Check-in component
 │   ├── Timeline.tsx       # Timeline component
@@ -230,11 +242,11 @@ This project is a demo application for educational and demonstration purposes.
 
 ---
 
-## 👨‍💻 Author
+## 👩‍💻 Author
 
-**Ang3la.xyz**
+**Angela Salles** — [Ang3la.xyz](https://ang3la.xyz)
 
-Project owner and creator. Developed as a demo for **[Stellar](https://stellar.org)**
+Owner, Founder & Builder. Developed as a demo for **[Stellar](https://stellar.org)**
 
 ---
 
@@ -253,4 +265,4 @@ We believe that hair care is more than aesthetics — it's identity, health, and
 
 ---
 
-*Last update: December 2025*
+*Last update: March 2026*
