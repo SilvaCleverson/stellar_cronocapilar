@@ -1,269 +1,276 @@
-# 💆‍♀️ CronoCapilar - Jornada de Cuidados Capilares na Stellar
+<p align="center">
+  <img src="https://img.shields.io/badge/Stellar-Feito%20na%20Stellar-blue?style=for-the-badge&logo=stellar&logoColor=white" alt="Built on Stellar" />
+  <img src="https://img.shields.io/badge/Next.js-14-black?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js 14" />
+  <img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License" />
+</p>
 
-> **Transforma sua rotina capilar em prova on-chain de autocuidado**
+<h1 align="center">💆‍♀️ CronoCapilar</h1>
 
-**⭐ Criado para [Stellar](https://stellar.org)** — Rede blockchain para pagamentos, DeFi e tokenização de ativos.
+<p align="center">
+  <strong>Transforma sua rotina de cuidados capilares em prova on-chain de autocuidado.</strong>
+</p>
 
-🌍 **Leia em outros idiomas:**
-- 🇧🇷 [Português (PT-BR)](README.pt-BR.md) ← Você está aqui
-- 🇪🇸 [Español (ES-ES)](README.es-ES.md)
-- 🇺🇸 [English (EN-US)](README.md)
+<p align="center">
+  <a href="README.pt-BR.md">🇧🇷 Português</a> · <a href="README.es-ES.md">🇪🇸 Español</a> · <a href="README.md">🇺🇸 English</a>
+</p>
 
 ---
 
-## 🎯 Entenda o projeto (em 30 segundos)
+## A ideia em uma frase
+
+> CronoCapilar é uma aplicação Web3 na **[Stellar](https://stellar.org)** que substitui a confusão nos cuidados com cabelo natural por um sistema simples, transparente e validado pela comunidade — sustentado por blockchain.
+
+---
+
+## Por que isso existe?
+
+Milhões de pessoas com cabelo natural vivem o mesmo ciclo frustrante:
+
+```
+😕 "Meu cabelo precisa de Hidratação, Nutrição ou Reconstrução?"
+😤  Compra produtos por indicação de influencer → não funciona
+💸  Perde tempo e dinheiro → desiste
+🔁  Repete
+```
+
+A causa raiz não é falta de produtos — é **falta de confiança e clareza**.
+
+**CronoCapilar** resolve isso colocando sua jornada capilar em um livro-razão transparente e à prova de manipulação. Nenhuma empresa é dona dos seus dados. Nenhum algoritmo decide o que você vê. A comunidade é a fonte da verdade.
+
+---
+
+## Por que Stellar?
 
 | | |
-|---|---|
-| **O que é** | Um app Web3 na **Stellar** que transforma sua rotina de cuidados com cabelo natural em prova verificável e on-chain de autocuidado. |
-| **O problema** | Confusão (Hidratação x Nutrição x Reconstrução), desconfiança nas recomendações, tempo e dinheiro perdidos. |
-| **A solução** | Diagnóstico simples (H/N/R), timeline rastreável e ecossistema validado pela comunidade com transparência blockchain. |
-| **Por que Stellar** | Confiança, baixo custo e rede feita para finanças inclusivas — sua jornada de cuidado merece um livro-razão neutro e aberto. |
+|:---|:---|
+| **Inclusiva por design** | Stellar foi construída para inclusão financeira — o mesmo propósito move o CronoCapilar: cuidado com a beleza deve ser acessível a todos. |
+| **Transações baratas** | Registrar tratamentos on-chain não pode custar mais que a máscara capilar. Stellar mantém as taxas desprezíveis. |
+| **Rápida e confiável** | Finalidade em 3-5 segundos significa que seu check-in fica registrado antes de você enxaguar o condicionador. |
+| **Alcance global** | Multi-moeda, multi-idioma — assim como nossos usuários. |
 
 ---
 
-### ✅ **Status: Demo - Stellar Testnet**
+## Como funciona
 
-**🌐 Demo:** Pronta para deploy na Stellar Testnet. Conecte sua carteira (ex.: [Freighter](https://www.freighter.app/)) para registrar tratamentos on-chain.
+```
+┌─────────────┐     ┌──────────────┐     ┌─────────────────────┐
+│  Conectar    │────▶│  Criar seu   │────▶│  Registrar tratamento│
+│  Carteira    │     │  Perfil      │     │  diário (H/N/R)      │
+└─────────────┘     └──────────────┘     └─────────────────────┘
+                                                   │
+                                                   ▼
+                                          ┌─────────────────┐
+                                          │  Construir sua   │
+                                          │  Prova de        │
+                                          │  Cuidado on-chain│
+                                          └─────────────────┘
+```
 
----
+1. **Conecte** sua carteira Stellar (ex.: [Freighter](https://www.freighter.app/))
+2. **Crie** seu perfil capilar (tipo, comprimento, textura)
+3. **Faça check-in** diário com seu tratamento: **H**idratação, **N**utrição ou **R**econstrução
+4. **Acompanhe** sua jornada em uma timeline imutável
+5. **Registre eventos** como Big Chop, cortes, coloração
 
-## 📱 Sobre o Projeto
-
-**CronoCapilar** é uma aplicação Web3 que ajuda pessoas com cabelo natural a entender o que o fio realmente precisa e a organizar sua rotina com clareza e transparência, através de uma ferramenta simples validada pela comunidade.
-
-### O Problema
-
-No mundo de hoje, cuidar do cabelo natural é uma jornada marcada pela confusão. Informações contraditórias, influências comerciais e a frustração de gastar tempo e dinheiro com produtos que não funcionam. É uma dor diária, frequente e emocional.
-
-- **Confusão**: Hidratação, Nutrição ou Reconstrução? A dúvida é constante.
-- **Desconfiança**: As recomendações são genuínas ou patrocinadas?
-- **Frustração**: Tentativas solitárias que não trazem os resultados esperados.
-- **Desperdício**: Tempo e dinheiro investidos sem clareza.
-
-### A Solução
-
-**CronoCapilar** usa tecnologia Web3 ([Stellar](https://stellar.org)) para criar um ecossistema transparente e validado pela comunidade onde:
-
-- ✅ **Clareza Imediata**: Um diagnóstico simples para saber o que seu cabelo precisa: Hidratação (H), Nutrição (N) ou Reconstrução (R)
-- ✅ **Registro Rastreável**: Acompanhe sua evolução em um histórico que é só seu
-- ✅ **Confiança Total**: A transparência da blockchain garante que os dados não são manipulados
-- ✅ **Pertencimento Genuíno**: Faça parte de uma comunidade que é a verdadeira fonte da verdade
+Cada ação se torna uma **Prova de Cuidado** — seu passaporte capilar verificável e on-chain.
 
 ---
 
-## 🎯 Funcionalidades
+## Funcionalidades
 
-### ✅ Implementadas
-
-- [x] Conexão de carteira Stellar (simulada)
-- [x] Perfil de cuidados capilares on-chain (simulado)
-- [x] Registro de tratamentos (Hidratação, Nutrição, Reconstrução)
-- [x] Timeline de cuidados capilares
-- [x] Sistema de check-in diário
-- [x] Registro de eventos (Big Chop, Corte, Coloração, Tratamento)
-- [x] Estatísticas e acompanhamento
-- [x] Internacionalização completa (PT-BR, EN-US, ES-ES)
-- [x] Design responsivo
-- [x] **Carregamento automático de dados on-chain (simulado)**
-- [x] **Detecção dinâmica de rede (Stellar Mainnet/Testnet)**
-- [x] **Pronto para deploy**
+| Funcionalidade | Descrição |
+|:---------------|:----------|
+| **Conexão de Carteira** | Conecte via carteiras compatíveis com Stellar |
+| **Perfil On-chain** | Tipo de cabelo, comprimento e textura armazenados on-chain |
+| **Check-in de Tratamento** | Registro diário H/N/R com acompanhamento de sequência |
+| **Timeline Visual** | Visão cronológica de toda sua jornada capilar |
+| **Registro de Eventos** | Big Chop, cortes, coloração — tudo registrado |
+| **Estatísticas** | Contadores de tratamento, sequências, consistência |
+| **3 Idiomas** | i18n completo: Português, English, Español |
+| **Responsivo** | Funciona em celular, tablet e desktop |
+| **Detecção de Rede** | Alternância automática Stellar Mainnet/Testnet |
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## Stack Tecnológica
 
-### Frontend
-- **Next.js 14** - Framework React com App Router
-- **TypeScript** - Tipagem estática
-- **React Hooks** - Gerenciamento de estado
-- **CSS-in-JS** - Estilização inline
-
-### Blockchain (Simulada)
-- **[Stellar](https://stellar.org)** - Integração simulada (pagamentos, DeFi, tokenização)
-- **Integração de Carteira** - Conexão de carteira demo
-- **Simulação de Transações** - Transações on-chain simuladas
-
-### Internacionalização
-- Sistema i18n customizado
-- Detecção automática de idioma
-- Suporte para 3 idiomas (PT-BR, EN-US, ES-ES)
+| Camada | Tecnologia |
+|:-------|:-----------|
+| **Framework** | [Next.js 14](https://nextjs.org) (App Router) |
+| **Linguagem** | [TypeScript 5](https://typescriptlang.org) |
+| **UI** | React 18 + CSS-in-JS |
+| **Blockchain** | [Stellar](https://stellar.org) (Testnet) |
+| **Estado** | [@tanstack/react-query](https://tanstack.com/query) |
+| **Carteira** | [Freighter](https://www.freighter.app/) recomendada |
+| **i18n** | Sistema próprio baseado em contexto (PT/EN/ES) |
+| **Deploy** | [Vercel](https://vercel.com) pronto |
 
 ---
 
-## 📦 Instalação
-
-### Pré-requisitos
-
-- Node.js 18+ 
-- npm ou yarn
-
-### Passos
-
-1. **Instalar dependências**:
-   ```bash
-   npm install
-   ```
-
-2. **Executar o projeto em desenvolvimento**:
-   ```bash
-   npm run dev
-   ```
-
-3. **Acessar no navegador**:
-   ```
-   http://localhost:3000
-   ```
-
-4. **Conectar carteira (demo)**:
-   - Clique em "Conectar Carteira"
-   - Selecione uma carteira (conexão simulada)
-   - Comece a acompanhar sua jornada capilar!
-
----
-
-## 🔧 Scripts Disponíveis
+## Início Rápido
 
 ```bash
-# Desenvolvimento
-npm run dev          # Iniciar servidor de desenvolvimento na porta 3000
+# 1. Clone o repositório
+git clone https://github.com/SilvaCleverson/stellar_cronocapilar.git
+cd stellar_cronocapilar
 
-# Produção
-npm run build        # Criar build de produção
-npm run start        # Iniciar servidor de produção
+# 2. Instale as dependências
+npm install
 
-# Qualidade de código
-npm run lint         # Executar ESLint
+# 3. Rode localmente
+npm run dev
+
+# 4. Abra no navegador
+# → http://localhost:3000
+```
+
+> **Dica:** Instale a extensão [Freighter](https://www.freighter.app/) no navegador para conectar sua carteira Stellar.
+
+---
+
+## Estrutura do Projeto
+
+```
+├── app/
+│   ├── layout.tsx              # Layout raiz (providers, banner, watermark)
+│   ├── page.tsx                # Página principal (perfil, tratamentos, timeline)
+│   ├── globals.css             # Estilos globais
+│   └── icon.svg                # Favicon do app
+│
+├── components/
+│   ├── LoginModal.tsx          # Modal de conexão de carteira
+│   ├── HairTreatmentCard.tsx   # Card de tratamento
+│   ├── TreatmentCheckIn.tsx    # Componente de check-in diário
+│   ├── Timeline.tsx            # Timeline da jornada capilar
+│   ├── EventRegister.tsx       # Registro de eventos (Big Chop, etc.)
+│   ├── StreakCard.tsx          # Tracker de sequência / consistência
+│   ├── Tabs.tsx               # Navegação por abas
+│   ├── LanguageSelector.tsx   # Seletor de idioma
+│   ├── DemoBanner.tsx         # Banner indicador de testnet
+│   ├── StellarWatermark.tsx   # Branding Stellar
+│   └── BigChopCard.tsx        # Tracker da data do Big Chop
+│
+├── lib/
+│   ├── stellar-provider.tsx    # Contexto e hooks da carteira Stellar
+│   ├── constants.ts            # Config de rede, endereços de contrato
+│   └── i18n.tsx                # Traduções (PT-BR, EN-US, ES-ES)
+│
+├── package.json
+├── tsconfig.json
+├── next.config.mjs
+└── vercel.json
 ```
 
 ---
 
-## 📁 Estrutura do Projeto
+## Arquitetura On-chain
+
+CronoCapilar é projetado para contratos inteligentes **[Soroban](https://soroban.stellar.org)** na Stellar:
 
 ```
-cronocapilar/
-├── app/                    # Next.js App Router
-│   ├── page.tsx           # Página principal
-│   ├── layout.tsx         # Layout raiz
-│   ├── globals.css        # Estilos globais
-│   └── icon.svg           # Ícone do app
-├── components/             # Componentes React
-│   ├── HairTreatmentCard.tsx # Card de tratamento
-│   ├── TreatmentCheckIn.tsx # Componente de check-in
-│   ├── Timeline.tsx       # Componente de timeline
-│   ├── EventRegister.tsx # Registro de eventos
-│   └── ...
-├── lib/                   # Utilitários e providers
-│   ├── constants.ts      # Constantes (Package ID, etc)
-│   ├── i18n.tsx          # Sistema de internacionalização
-│   └── stellar-provider.tsx  # Provider carteira/Stellar (simulado)
-├── public/                # Arquivos estáticos
-└── package.json          # Dependências e scripts
+┌────────────────────────────────────────────────────┐
+│                 Contratos Soroban                    │
+├────────────────┬───────────────┬───────────────────┤
+│   Profile      │  Treatment    │     Event          │
+│   ─────────    │  ──────────   │     ─────          │
+│   hair_type    │  type (H/N/R) │     event_type     │
+│   length       │  timestamp    │     timestamp      │
+│   texture      │  tx_hash      │     description    │
+│   owner        │  owner        │     owner          │
+└────────────────┴───────────────┴───────────────────┘
 ```
 
----
+**Funções principais:**
+- `create_profile` — Criar perfil capilar on-chain
+- `register_treatment` — Registrar tratamento H/N/R
+- `register_event` — Registrar Big Chop, corte, coloração, etc.
 
-## 🔗 Contratos Inteligentes (Simulados)
-
-O projeto usa contratos inteligentes simulados na Stellar:
-
-- **Package ID**: `0xCRONOCAPILAR_STELLAR_DEMO_ID` (simulado)
-- **Rede**: Stellar Mainnet/Testnet (simulada)
-- **Módulo**: `profile`
-- **Funções principais**:
-  - `create_profile` - Criar perfil de cuidados capilares on-chain
-  - `register_treatment` - Registrar tratamento (Hidratação, Nutrição, Reconstrução)
-  - `register_event` - Registrar evento (Big Chop, Corte, Coloração, Tratamento)
-
-### 📝 Estruturas de Dados
-
-- **Profile**: Armazena informações de cuidados capilares (tipo de cabelo, comprimento, textura)
-- **Treatment**: Registra tratamentos realizados (Hidratação, Nutrição, Reconstrução)
-- **Event**: Registra eventos importantes (Big Chop, Corte, Coloração, Tratamento)
-
-> **Nota:** Esta é uma demo com interações blockchain simuladas. Em produção, contratos reais Stellar/Soroban seriam usados.
+> **Status atual:** Demo com transações simuladas. A versão de produção usará contratos Soroban reais na Stellar Testnet/Mainnet.
 
 ---
 
-## 🌍 Internacionalização
+## Prova de Cuidado
 
-O projeto suporta 3 idiomas:
+Cada tratamento que você registra on-chain se torna uma **Prova de Cuidado** — um registro verificável da sua dedicação.
 
-- 🇧🇷 **Português (Brasil)** - `pt-BR`
-- 🇺🇸 **English (US)** - `en-US`
-- 🇪🇸 **Español** - `es-ES`
+O que você constrói:
 
-O idioma é detectado automaticamente com base nas configurações do navegador, mas pode ser alterado manualmente através do seletor de idioma.
+- **Identidade Capilar Descentralizada** — Um perfil on-chain que pertence a *você*, não a uma plataforma
+- **Reputação Verificável** — Sua consistência gera uma reputação que vale algo na comunidade
+- **Histórico Imutável** — Um registro transparente da sua evolução, livre de manipulação
 
----
-
-## 💡 Por que Web3? Porque a confiança precisa ser a base.
-
-A Web3, construída sobre tecnologias como blockchain, é como um jardim de confiança. É um ecossistema que não pertence a uma única empresa, mas é mantido e cultivado pela própria comunidade.
-
-**Blockchain = O Diário Público da Comunidade**
-
-Cada tratamento que você registra se torna uma página em um diário público, imutável e inviolável. Seu progresso é real e verificável por todos.
-
-**Contratos Inteligentes = Regras Automáticas e Transparentes**
-
-São códigos que executam as regras do aplicativo sem intermediários. Se uma condição é cumprida (ex: você completou sua rotina), uma ação acontece (ex: você ganha um selo de reconhecimento). A confiança é automatizada.
+> *Sua jornada capilar é a sua história. Blockchain garante que ninguém pode reescrevê-la.*
 
 ---
 
-## 🎯 Prova de Cuidado
+## Internacionalização
 
-No nosso ecossistema, cada ato de cuidado que você registra na blockchain é uma "Prova de Cuidado". Isso vai além de um simples diário. É a criação do seu passaporte capilar digital, uma identidade descentralizada que prova sua dedicação e seu progresso.
+Suporte completo para 3 idiomas, detectados automaticamente pelo navegador:
 
-**O que você constrói com a Prova de Cuidado:**
-- **Identidade Capilar Descentralizada (CID)**: Um perfil on-chain que pertence a você, e não a uma plataforma
-- **Reputação Verificável**: Sua consistência e conhecimento geram uma reputação que vale algo na comunidade
-- **Histórico Imutável**: Um registro transparente da sua evolução, livre de edições ou manipulações
-
----
-
-## 🚀 Deploy
-
-### Recomendado: Vercel
-
-A aplicação está pronta para deploy no Vercel:
-
-1. Faça push do código para o GitHub
-2. Conecte o repositório ao Vercel
-3. Faça deploy automaticamente
-
-**Recomendação:** Use **Vercel** para o melhor suporte Next.js e o deploy mais simples.
+| Idioma | Código | Bandeira |
+|:-------|:-------|:---------|
+| Português (Brasil) | `pt-BR` | 🇧🇷 |
+| English | `en-US` | 🇺🇸 |
+| Español | `es-ES` | 🇪🇸 |
 
 ---
 
-## 📄 Licença
+## Deploy
 
-Este projeto é uma aplicação demo para fins educacionais e de demonstração.
+Deploy em um clique na Vercel:
+
+```bash
+npm run build    # Build de produção
+npm run start    # Iniciar servidor de produção
+```
+
+Ou conecte este repositório GitHub à [Vercel](https://vercel.com) para deploys automáticos a cada push.
 
 ---
 
-## 👩‍💻 Autor
+## Roadmap
+
+- [ ] Deploy real de smart contracts Soroban
+- [ ] Integração profunda com carteira Freighter
+- [ ] Sistema de validação comunitária (votar em tratamentos)
+- [ ] NFT badges para marcos de cuidado
+- [ ] Diagnóstico capilar por IA a partir de fotos
+- [ ] Motor de recomendação de produtos (community-driven)
+
+---
+
+## Manifesto
+
+> *Acreditamos que o cuidado com o cabelo é mais do que estética — é identidade, saúde e amor próprio.*
+>
+> *Cada fio cuidado é um gesto de autocuidado. Cada gesto compartilhado é uma semente de transformação.*
+>
+> *Na era da Web3, queremos descentralizar a beleza — tornando o conhecimento acessível e o pertencimento digital uma nova forma de empatia.*
+>
+> **Cuidar do cabelo natural deveria ser simples.**
+
+---
+
+## Autor
 
 **Angela Salles** — [Ang3la.xyz](https://ang3la.xyz)
 
-Owner, Founder & Builder. Idealizadora e realizadora do projeto. Desenvolvido como demo para **[Stellar](https://stellar.org)**
+Owner, Founder & Builder
 
 ---
 
-## 🙏 Agradecimentos
+## Agradecimentos
 
-- **[Stellar Development Foundation](https://stellar.org)** - Pela rede e documentação
-- **Comunidade de Cuidados Capilares** - Pela inspiração e apoio
-
----
-
-## 🌟 Manifesto
-
-Acreditamos que o cuidado com o cabelo é mais do que estética — é identidade, saúde e amor próprio. Cada fio cuidado é um gesto de autocuidado, e cada gesto compartilhado é uma semente de transformação. Na era da Web3, queremos descentralizar a beleza, tornando o conhecimento acessível e o pertencimento digital uma nova forma de empatia.
-
-**Cuidar do cabelo natural deveria ser simples.**
+- [Stellar Development Foundation](https://stellar.org) — Pela rede, visão e documentação
+- Comunidade de cuidados capilares — Pela inspiração, resiliência e amor
 
 ---
 
-*Última atualização: Março 2026*
+<p align="center">
+  <strong>Feito com 💜 para <a href="https://stellar.org">Stellar</a></strong>
+</p>
 
+<p align="center">
+  <sub>Março 2026</sub>
+</p>
