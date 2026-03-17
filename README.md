@@ -229,6 +229,15 @@ Or connect this GitHub repo to [Vercel](https://vercel.com) for automatic deploy
 
 ---
 
+## Documentation
+
+| Document | Description |
+|:---------|:------------|
+| [Litepaper](docs/LITEPAPER.md) | Concise overview of CronoCapilar and the Proof of Care protocol (3-5 pages) |
+| [Whitepaper](docs/WHITEPAPER.md) | Complete technical and conceptual documentation (10-15 pages) |
+
+---
+
 ## Roadmap
 
 - [ ] Real Soroban smart contract deployment
