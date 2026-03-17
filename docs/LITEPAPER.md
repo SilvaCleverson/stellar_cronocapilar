@@ -35,7 +35,7 @@ The result is a multi-billion-dollar market built on **trust deficits** — wher
 
 CronoCapilar is not a tracking app. It is a **decentralized social network for hair care** where every action of self-care becomes a building block of identity and reputation.
 
-Users connect a Stellar wallet, create a hair profile, and begin registering daily treatments — Hydration (H), Nutrition (N), or Reconstruction (R) — along with significant events like Big Chop, haircuts, or coloring. Each registration is recorded on-chain as a **Proof of Care** entry.
+Users sign up to CronoCapilar, create a hair profile, and begin registering daily treatments — Hydration (H), Nutrition (N), or Reconstruction (R) — along with significant events like Big Chop, haircuts, or coloring. Behind the scenes, the app uses a Stellar-compatible wallet (e.g., Freighter) to record each registration on-chain as a **Proof of Care** entry.
 
 Over time, these records form a verifiable hair care passport: an immutable timeline that belongs entirely to the user. This passport becomes the foundation for:
 
@@ -128,7 +128,7 @@ A subscription tier for hair care professionals (stylists, trichologists, salon 
 
 | Phase | Focus |
 |:------|:------|
-| **Phase 1 — Foundation** | Core app (Next.js + Stellar), wallet connection, on-chain profile, treatment check-in, visual timeline, 3-language support |
+| **Phase 1 — Foundation** | Core app (Next.js + Stellar), sign-in (Stellar wallet in background), on-chain profile, treatment check-in, visual timeline, 3-language support |
 | **Phase 2 — Protocol** | Soroban smart contracts deployment, Proof of Care engine, Soulbound Passport minting, streak tracking on-chain |
 | **Phase 3 — Community** | Social feed ranked by reputation, peer validation, professional verification, community challenges |
 | **Phase 4 — Economy** | Marketplace launch, B2B Intelligence platform, Pro Tools subscription, governance foundations |

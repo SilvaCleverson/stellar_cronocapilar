@@ -138,7 +138,7 @@ The core insight is simple: **if care is visible, care becomes valuable.** When 
 The user journey follows a natural progression:
 
 ```
-  Connect Wallet ──► Create Hair Profile ──► Daily Check-in (H/N/R)
+  Sign in ──► Create Hair Profile ──► Daily Check-in (H/N/R)
                                                       │
                                                       ▼
                                             Register Events
@@ -155,7 +155,7 @@ The user journey follows a natural progression:
                                       (validate, share, mentor)
 ```
 
-1. **Connect** a Stellar-compatible wallet (e.g., [Freighter](https://www.freighter.app/))
+1. **Sign in** to CronoCapilar with your account (the app creates or connects a Stellar wallet in the background, e.g. [Freighter](https://www.freighter.app/))
 2. **Create** an on-chain hair profile (type, length, texture, goals)
 3. **Check in** daily with treatments: **H**ydration, **N**utrition, or **R**econstruction
 4. **Register events** — Big Chop, haircuts, coloring, protein treatments, and other milestones
@@ -201,7 +201,7 @@ Stellar was created with a mission of financial inclusion — connecting the wor
 - **Soroban Smart Contracts** — All protocol logic (profiles, treatments, reputation, passports) runs as Soroban contracts written in Rust, compiled to WASM.
 - **Stellar Accounts & Manage Data** — User profiles leverage Stellar's native account data entries for lightweight identity storage.
 - **SEP Standards** — Future integration with Stellar's Anchor ecosystem enables fiat on/off ramps for marketplace functionality.
-- **Freighter Wallet** — The recommended user wallet, providing seamless Web3 onboarding without requiring users to understand blockchain mechanics.
+- **Stellar wallet (e.g. Freighter)** — Used in the background for on-chain operations; users sign in to the app, not to the wallet.
 
 ---
 
@@ -280,7 +280,7 @@ Manages the non-transferable identity token:
 ### 6.3 Off-chain Layer
 
 - **Next.js 14 (App Router)** — Server-rendered React frontend with TypeScript, providing a fast and accessible user interface.
-- **Freighter Wallet Integration** — Transaction signing and account management through Stellar's flagship browser wallet.
+- **Stellar wallet integration (e.g. Freighter)** — Transaction signing and account management in the background; the app handles wallet creation/linking so users only sign in.
 - **@tanstack/react-query** — Client-side state management and caching for on-chain data queries.
 - **Custom i18n System** — Context-based internationalization supporting English, Portuguese (Brazil), and Spanish.
 
@@ -529,9 +529,9 @@ The biggest barrier to Web3 adoption is not technology — it is language. Terms
 1. "Create your hair profile" (not "mint an NFT")
 2. "Register your treatment" (not "submit a transaction")
 3. "Build your hair care passport" (not "accumulate soulbound tokens")
-4. "Connect your wallet" (presented as a login method, not a crypto action)
+4. "Sign in to CronoCapilar" (we connect a Stellar wallet for you in the background)
 
-**Wallet creation is streamlined.** Freighter wallet installation is presented as a one-time setup step, similar to creating a social media account. Guides and tooltips walk users through the process in non-technical language.
+**No wallet login required.** Users sign in to the app as they would to any other service. The Stellar wallet (e.g. Freighter) is created or linked in the background; the user never has to think in terms of "connecting a wallet" or "managing keys" unless they choose to.
 
 **Costs are invisible.** Stellar's near-zero fees mean the user never encounters a "gas fee" dialog. The experience of registering a treatment feels identical to pressing a button in a traditional app.
 
@@ -543,7 +543,7 @@ For users who are curious about the technology, CronoCapilar provides optional e
 
 - In-app explanations of why data is stored on Stellar
 - Links to transaction records on Stellar explorers
-- Guides for advanced wallet features
+- Guides for advanced features (including optional wallet export)
 - Community discussions about decentralization and data ownership
 
 This ensures that technically curious users can go deeper without forcing technical complexity on everyone.
@@ -613,7 +613,7 @@ The governance model is intentionally reputation-based rather than token-based. 
 *Current phase*
 
 - Core application: Next.js 14 + TypeScript + Stellar integration
-- Wallet connection via Freighter
+- Sign-in (Stellar wallet in background, e.g. Freighter)
 - On-chain hair profile creation
 - Daily treatment check-in (H/N/R) with streak tracking
 - Visual timeline of hair care journey

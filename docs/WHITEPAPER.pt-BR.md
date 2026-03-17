@@ -138,7 +138,7 @@ O insight central e simples: **se o cuidado e visivel, o cuidado se torna valios
 A jornada do usuario segue uma progressao natural:
 
 ```
-  Conectar Carteira ──► Criar Perfil Capilar ──► Check-in Diario (H/N/R)
+  Entrar no App ──► Criar Perfil Capilar ──► Check-in Diario (H/N/R)
                                                          │
                                                          ▼
                                                Registrar Eventos
@@ -155,7 +155,7 @@ A jornada do usuario segue uma progressao natural:
                                          (validar, compartilhar, mentorar)
 ```
 
-1. **Conecte** uma carteira compativel com Stellar (ex.: [Freighter](https://www.freighter.app/))
+1. **Acesse** o CronoCapilar com sua conta (nos bastidores, o app cria/conecta uma carteira Stellar compativel, ex.: [Freighter](https://www.freighter.app/))
 2. **Crie** um perfil capilar on-chain (tipo, comprimento, textura, objetivos)
 3. **Faca check-in** diario com tratamentos: **H**idratacao, **N**utricao ou **R**econstrucao
 4. **Registre eventos** — Big Chop, cortes, coloracao, tratamentos de proteina e outros marcos
@@ -201,7 +201,7 @@ A Stellar foi criada com a missao de inclusao financeira — conectando populaco
 - **Contratos Inteligentes Soroban** — Toda logica do protocolo (perfis, tratamentos, reputacao, passaportes) roda como contratos Soroban escritos em Rust, compilados para WASM.
 - **Contas Stellar & Manage Data** — Perfis de usuarios aproveitam as entradas de dados nativos de contas Stellar para armazenamento leve de identidade.
 - **Padroes SEP** — Integracao futura com o ecossistema de Anchors da Stellar habilita rampas de entrada/saida fiat para funcionalidade de marketplace.
-- **Carteira Freighter** — A carteira recomendada para usuarios, proporcionando onboarding Web3 sem exigir que usuarios entendam mecanica de blockchain.
+- **Carteira Stellar (ex.: Freighter)** — Usada em segundo plano nas operacoes on-chain; o usuario faz login no app, nao na carteira.
 
 ---
 
@@ -280,7 +280,7 @@ Gerencia o token de identidade intransferivel:
 ### 6.3 Camada Off-chain
 
 - **Next.js 14 (App Router)** — Frontend React renderizado no servidor com TypeScript, fornecendo uma interface de usuario rapida e acessivel.
-- **Integracao Carteira Freighter** — Assinatura de transacoes e gerenciamento de contas pela carteira principal da Stellar para navegadores.
+- **Integracao com carteira Stellar (ex.: Freighter)** — Assinatura de transacoes e gerenciamento de contas em segundo plano; o app cuida da criacao/vinculo da carteira para o usuario apenas entrar.
 - **@tanstack/react-query** — Gerenciamento de estado e cache do lado do cliente para consultas de dados on-chain.
 - **Sistema i18n Personalizado** — Internacionalizacao baseada em contexto suportando Ingles, Portugues (Brasil) e Espanhol.
 
@@ -529,9 +529,9 @@ A maior barreira para adocao Web3 nao e tecnologia — e linguagem. Termos como 
 1. "Crie seu perfil capilar" (nao "cunhe um NFT")
 2. "Registre seu tratamento" (nao "submeta uma transacao")
 3. "Construa seu passaporte capilar" (nao "acumule tokens soulbound")
-4. "Conecte sua carteira" (apresentado como metodo de login, nao como acao cripto)
+4. "Faca login no CronoCapilar" (em segundo plano, conectamos uma carteira Stellar para voce)
 
-**Criacao de carteira e simplificada.** A instalacao da carteira Freighter e apresentada como uma etapa de configuracao unica, similar a criar uma conta de rede social. Guias e tooltips acompanham usuarios pelo processo em linguagem nao-tecnica.
+**Nenhum login em carteira.** O usuario entra no app como em qualquer outro servico. A carteira Stellar (ex.: Freighter) e criada ou vinculada nos bastidores; o usuario nao precisa pensar em "conectar carteira" ou "gerenciar chaves", a menos que queira.
 
 **Custos sao invisiveis.** As taxas quase-zero da Stellar significam que o usuario nunca encontra um dialogo de "taxa de gas". A experiencia de registrar um tratamento parece identica a apertar um botao em um app tradicional.
 
@@ -543,7 +543,7 @@ Para usuarios curiosos sobre a tecnologia, o CronoCapilar oferece conteudo educa
 
 - Explicacoes in-app de por que dados sao armazenados na Stellar
 - Links para registros de transacao em exploradores Stellar
-- Guias para funcionalidades avancadas de carteira
+- Guias para funcionalidades avancadas (incluindo exportacao opcional da carteira)
 - Discussoes comunitarias sobre descentralizacao e propriedade de dados
 
 Isso garante que usuarios tecnicamente curiosos possam aprofundar sem forcar complexidade tecnica sobre todos.
@@ -613,7 +613,7 @@ O modelo de governanca e intencionalmente baseado em reputacao em vez de tokens.
 *Fase atual*
 
 - Aplicacao central: Next.js 14 + TypeScript + integracao Stellar
-- Conexao de carteira via Freighter
+- Acesso por conta (carteira Stellar em segundo plano, ex.: Freighter)
 - Criacao de perfil capilar on-chain
 - Check-in diario de tratamento (H/N/R) com rastreamento de sequencias
 - Timeline visual da jornada capilar

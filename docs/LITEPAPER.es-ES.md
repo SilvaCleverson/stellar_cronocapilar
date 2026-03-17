@@ -35,7 +35,7 @@ El resultado es un mercado multimillonario construido sobre **deficits de confia
 
 CronoCapilar no es una app de seguimiento. Es una **red social descentralizada para el cuidado capilar** donde cada accion de autocuidado se convierte en un bloque de construccion de identidad y reputacion.
 
-Los usuarios conectan una cartera Stellar, crean un perfil capilar y comienzan a registrar tratamientos diarios — Hidratacion (H), Nutricion (N) o Reconstruccion (R) — junto con eventos significativos como Big Chop, cortes o coloracion. Cada registro se graba on-chain como una entrada de **Proof of Care**.
+Los usuarios acceden a CronoCapilar, crean un perfil capilar y comienzan a registrar tratamientos diarios — Hidratacion (H), Nutricion (N) o Reconstruccion (R) — junto con eventos significativos como Big Chop, cortes o coloracion. En segundo plano, la app utiliza una cartera Stellar compatible (ej.: Freighter) para grabar cada registro on-chain como una entrada de **Proof of Care**.
 
 Con el tiempo, estos registros forman un pasaporte capilar verificable: una linea de tiempo inmutable que pertenece enteramente al usuario. Este pasaporte se convierte en la base para:
 
@@ -128,7 +128,7 @@ Un nivel de suscripcion para profesionales del cuidado capilar (estilistas, tric
 
 | Fase | Enfoque |
 |:-----|:--------|
-| **Fase 1 — Fundacion** | App central (Next.js + Stellar), conexion de cartera, perfil on-chain, check-in de tratamiento, timeline visual, soporte de 3 idiomas |
+| **Fase 1 — Fundacion** | App central (Next.js + Stellar), acceso por cuenta (cartera Stellar en segundo plano), perfil on-chain, check-in de tratamiento, timeline visual, soporte de 3 idiomas |
 | **Fase 2 — Protocolo** | Deploy de contratos Soroban, motor de Proof of Care, acunacion de Pasaporte Soulbound, seguimiento de rachas on-chain |
 | **Fase 3 — Comunidad** | Feed social clasificado por reputacion, validacion entre pares, verificacion profesional, desafios comunitarios |
 | **Fase 4 — Economia** | Lanzamiento del Marketplace, plataforma de B2B Intelligence, suscripcion Pro Tools, bases de gobernanza |

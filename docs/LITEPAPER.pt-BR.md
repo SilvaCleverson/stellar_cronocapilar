@@ -35,7 +35,7 @@ O resultado e um mercado multibilionario construido sobre **deficits de confianc
 
 CronoCapilar nao e um app de rastreamento. E uma **rede social descentralizada para cuidados capilares** onde cada acao de autocuidado se torna um bloco de construcao de identidade e reputacao.
 
-Usuarios conectam uma carteira Stellar, criam um perfil capilar e comecam a registrar tratamentos diarios — Hidratacao (H), Nutricao (N) ou Reconstrucao (R) — junto com eventos significativos como Big Chop, cortes ou coloracao. Cada registro e gravado on-chain como uma entrada de **Proof of Care**.
+Usuarios acessam o CronoCapilar, criam um perfil capilar e comecam a registrar tratamentos diarios — Hidratacao (H), Nutricao (N) ou Reconstrucao (R) — junto com eventos significativos como Big Chop, cortes ou coloracao. Em segundo plano, o app utiliza uma carteira Stellar compativel (ex.: Freighter) para gravar cada registro on-chain como uma entrada de **Proof of Care**.
 
 Com o tempo, esses registros formam um passaporte capilar verificavel: uma timeline imutavel que pertence inteiramente ao usuario. Esse passaporte se torna a base para:
 
@@ -128,7 +128,7 @@ Um nivel de assinatura para profissionais de cuidados capilares (estilistas, tri
 
 | Fase | Foco |
 |:-----|:-----|
-| **Fase 1 — Fundacao** | App central (Next.js + Stellar), conexao de carteira, perfil on-chain, check-in de tratamento, timeline visual, suporte a 3 idiomas |
+| **Fase 1 — Fundacao** | App central (Next.js + Stellar), acesso por conta (carteira Stellar em segundo plano), perfil on-chain, check-in de tratamento, timeline visual, suporte a 3 idiomas |
 | **Fase 2 — Protocolo** | Deploy de contratos Soroban, motor de Proof of Care, cunhagem de Passaporte Soulbound, rastreamento de sequencias on-chain |
 | **Fase 3 — Comunidade** | Feed social ranqueado por reputacao, validacao entre pares, verificacao profissional, desafios comunitarios |
 | **Fase 4 — Economia** | Lancamento do Marketplace, plataforma de B2B Intelligence, assinatura Pro Tools, fundacoes de governanca |
